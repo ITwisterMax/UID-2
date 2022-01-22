@@ -1,0 +1,466 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../asset/overlay.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    display: inline-block;
+    list-style: decimal;
+    padding-left: 0px;
+}
+
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+main {
+    text-align: center;
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin : 30px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin : 30px;
+    color: white;
+}
+
+footer button {
+    background: 0;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+footer button:focus {
+   outline: none;
+}
+
+.js-clock {
+    font-size: 6rem;
+    cursor: default;
+    letter-spacing: -5px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.js-date {
+    font-size: 2rem;
+    cursor: default;
+    user-select: none;
+}
+
+.js-user {
+    font-size: 2rem;
+    height: 55px;
+    cursor: default;
+}
+
+.js-name {
+    font-size: 2rem;
+    height: 55px;
+    cursor: default;
+}
+
+.js-name input {
+    width: 25rem;
+}
+
+.userName:hover{
+    border-bottom: white solid;
+}
+
+.js-todo {
+    font-size: 150%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.todoHead {
+    font-size: 120%;
+}
+
+.js-list {
+    list-style: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 35%;
+    font-weight: lighter;
+    font-size: 200%;
+    margin: 0 auto;
+}
+
+.js-list li {
+    cursor: default;
+    animation: fadeIn .5s;
+}
+
+.js-list li button {
+    background: 0;
+    border: white;
+    width: 30px;;
+    height: 35px;
+    font-size: 100%;
+    border-radius: 30px;
+    color:  white;
+}
+
+.js-list li button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.todoQeus {
+    font-size: 130%;
+}
+
+.js-input1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: -0.5rem;
+    width: 25rem;
+    background: 0;
+    border: 0;
+    border-bottom: white solid;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;;
+}
+
+.js-input1:focus {
+    outline: none;
+    color: white;
+}
+
+.js-input2 {
+    display: block;
+    margin: 0 auto;
+    width: 25rem;
+    background: 0;
+    border: 0;
+    border-bottom: white solid;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    line-height: 120%;
+    margin-top: 10px;
+}
+
+.js-input2:focus {
+    outline: none;
+    color: white;
+}
+
+.showing {
+    display: block;
+}
+
+.search span {
+    color: white;
+    margin-right: 5%;  
+}
+
+.search-input{
+    height: 20px;
+    width: 80%;
+    background: 0;
+    border: 0;
+    color: white;
+    font-size: 120%;  
+    background: url("../asset/magnifying-glass.png") no-repeat;
+    background-size: 17px;
+    padding-left: 30px;
+}
+
+.search-input:focus{
+    outline: none;
+    border-bottom: white solid thin;
+    color: white;
+}
+
+.search-input:hover{
+    border-bottom: white solid thin;
+    color: white;
+}
+
+#js-weather {
+    color: white;
+    width: 20rem;
+    height: 10rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#city {
+    margin-bottom: 5px;
+}
+
+#city:hover {
+    border-bottom: white solid thin;
+    color: white;
+}
+
+#city:focus {
+    outline: none;
+    border-bottom: white solid thin;
+    color: white;
+}
+
+.area {
+    font-size: 65%;
+}
+
+.inputUserName{
+    margin: 0 auto;
+    width: 13%;
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 80%;
+    color:white;
+    line-height: 120%;
+
+}
+
+.inputUserName:focus {
+    outline: none;
+    color: white;
+}
+
+.inline{
+    display: inline;
+}
+
+.js-footTodolist {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 320px;
+    height: auto;
+    color :white;
+    background-color: black;
+    border-radius: 1rem;
+    right: 1rem;
+    bottom: 3rem;
+}
+
+.js-footTodolist button {
+    width: 40%;
+    margin: auto;
+}
+
+.js-footTodolist header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 120%;
+    margin: 1rem;
+    border-bottom: white 0.05rem solid;
+} 
+
+.js-footTodolist header div{
+    cursor: default;
+} 
+
+.js-footTodolist header button {
+    cursor: pointer;
+    text-align: start;
+    margin: 0;
+    width: 1.5rem;
+    background: 0;
+    border: 0;
+    color: white;
+    font-size: 120%;
+}
+
+.js-footTodolist input {
+    margin: 1rem;
+    background: 0;
+    border: 0;
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.js-footTodolist input:focus {
+    outline: none;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.js-quote {
+    width: 25%;
+    font-size: 120%;
+    margin-left: 5%;
+}
+
+.js-quote:hover {
+    color: rgb(175, 166, 166);
+    cursor: pointer;
+}
+
+#js-askTodo {
+    height: 6rem;
+}
+
+#js-footContent {
+    height: auto;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#js-footContent button {
+    margin-top: 1rem;
+    background-color: gray;
+    border: 0;
+    border-radius: 2rem;
+    color: white;
+    height: 2rem;
+}
+
+#js-todolist {
+    text-align: left;
+    padding:  0 1rem 0 1rem;
+    margin: 0;
+}
+
+#js-todolist li{
+    cursor: default;
+    list-style: none;
+    text-align: left;
+    margin: 0;
+}
+
+#js-todolist li button{
+    display: none;
+}
+
+#js-todolist li:hover button{
+    display: inline-block;
+    height: auto;
+    border-radius: 0.5rem;
+    width: 1rem;
+    margin: 0;
+}
+
+#js-todolist li:hover button:hover{
+    cursor: pointer;
+}
+
+#js-todolist li input{
+    margin: 0.3rem 0.7rem 0.3rem 0.7rem;
+}
+
+.js-inputTodo {
+    width: 90%;
+}
+
+#js-todoButton:hover {
+    color: rgb(175, 166, 166);
+    cursor: pointer;
+}
+
+#js-qt:hover {
+    color: rgb(175, 166, 166);
+    cursor: pointer; 
+}
+
+.js-button {
+    margin: 0 auto;
+}
+
+#js-image-prev {
+    background-color: unset;
+    border: unset;
+    background-image: url("../asset/prev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+#js-image-prev:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+}
+
+#js-image-next {
+    background-color: unset;
+    border: unset;
+    background-image: url("../asset/next.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+#js-image-next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+}
+
+.hiding {
+    display: none;
+}
+
+.checkClicked {
+    text-decoration: line-through;
+    color : gray;
+}
